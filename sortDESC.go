@@ -26,10 +26,10 @@ func SortString(s string) string {
 	return string(r)
 }
 
-func Sort(wording string) (string, error) {
+func Sorta(wording string) (string, error) {
 
 	if _, err := strconv.ParseFloat(wording, 64); err == nil {
-		return "", errors.New("error, your input look like a number")
+		return "", errors.New("incorrect, your input look like a number")
 
 	}
 	newWording := SortString(wording)
